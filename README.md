@@ -1,4 +1,4 @@
-# GFX Swap Program
+# GFX Swap Program ![build](https://img.shields.io/github/workflow/status/GooseFX1/gfx-swap/ci?style=flat-square)
 
 This is a re-implement of the swap program in solana-program-library https://github.com/solana-labs/solana-program-library/tree/master/token-swap.
 
