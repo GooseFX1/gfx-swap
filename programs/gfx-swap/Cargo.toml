@@ -4,7 +4,7 @@ description = "gfx-swap is an anchor re-implement of the token-swap program in s
 edition = "2018"
 license = "MIT"
 name = "gfx-swap"
-readme = "README.md"
+readme = "../../README.md"
 repository = "https://github.com/GooseFX1/gfx-swap"
 version = "0.1.0"
 
