@@ -6,8 +6,11 @@ This is a re-implement of the swap program in solana-program-library https://git
 
 This repo is audited by Halborn. The auditing report is under [audit/GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf](audit/GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf)
 
-## Deploy and run gfx-swap
+## Examples
 
+For how to call this contract, please take a look at the [examples](programs/gfx-swap/examples) and the [tests](programs/gfx-swap/tests).
+
+## Deploy and run gfx-swap
 ### Prerequisites
 
 * System: Mac or Linux
@@ -30,7 +33,7 @@ USER_WALLET="~/.config/solana/id.json"
 
 You might want to provide different addresses for TOKEN_A and TOKEN_B.
 
-### Generate a key for deploy the program
+### Generate a key for deploying the program
 Run `just keygen gfx-swap`.
 
 ### Deploy the program
@@ -66,4 +69,5 @@ This is the inverse operation to the `deposit` command.
 
 Run `just cli swap --swap-in A --amount <amount>`. 
 This swaps in some token A for some token B.
+
 
