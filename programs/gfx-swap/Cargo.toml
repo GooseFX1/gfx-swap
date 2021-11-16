@@ -1,0 +1,49 @@
+[package]
+description = "Created with Anchor"
+edition = "2018"
+name = "gfx-swap"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "gfx_swap"
+
+[features]
+ci = []
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+
+[dependencies]
+anchor-lang = "0.18"
+anchor-spl = "0.18"
+borsh = "0.9"
+enum_dispatch = "0.3"
+fehler = "1"
+num-derive = "0.3"
+num-traits = "0.2"
+solana-program = "1"
+spl-associated-token-account = {version = "1", features = ["no-entrypoint"]}
+spl-math = {version = "0.1", features = ["no-entrypoint"]}
+spl-token = {version = "3", features = ["no-entrypoint"]}
+thiserror = "1"
+
+[dev-dependencies]
+anchor-client = "0.18"
+anyhow = "1"
+env_logger = "0.9"
+gfx-solana-utils = "0.1"
+once_cell = "1"
+prettytable-rs = {version = "0.8"}
+proptest = "1"
+roots = "0.0.7"
+serial_test = "0.5"
+sim = {path = "../../sim"}
+solana-client = "1"
+solana-sdk = "1"
+structopt = {version = "0.3"}
+
+[build-dependencies]
+gfx-solana-utils = "0.1"
+solana-sdk = "1"
